@@ -158,7 +158,7 @@ def run_closed(suffix_2, switch_sizes, m):
     newbw = 0
     for site in range(0, 100):
         for inst in range(0, 90):
-            print site, inst
+            print(site, inst)
             ret = defend(site, inst, switch_sizes, end_sizes, FIRST_TIME_GAP, POSS_TIME_GAPS, SUBSEQ_LENGTH, MEMORY, suffix_2)
             if ret != None:
                 oldt+=ret[0]
@@ -191,7 +191,7 @@ def run_open(suffix_2, switch_sizes, m):
     newbw = 0
     for site in range(0, 100):
         for inst in range(0, 90):
-            print site, inst
+            print(site, inst)
             ret = defend(site, inst, switch_sizes, end_sizes, FIRST_TIME_GAP, POSS_TIME_GAPS, SUBSEQ_LENGTH, MEMORY, suffix_2)
             if ret != None:
                 oldt+=ret[0]
@@ -215,7 +215,7 @@ def run_open(suffix_2, switch_sizes, m):
     oldbw = 0
     newbw = 0
     for site in range(0, 9000):
-        print site
+        print(site)
         ret = defend(site, None, switch_sizes, end_sizes, FIRST_TIME_GAP, POSS_TIME_GAPS, SUBSEQ_LENGTH, MEMORY, suffix_2)
         if ret != None:
             oldt+=ret[0]
@@ -223,8 +223,8 @@ def run_open(suffix_2, switch_sizes, m):
             oldbw+=ret[2]
             newbw+=ret[3]            
 
-    print newbw
-    print oldbw
+    print(newbw)
+    print(oldbw)
 
     toh = float(newt-oldt)/oldt
     bwoh = float(newbw-oldbw)/oldbw
