@@ -21,7 +21,7 @@ NUM_UNMON_SITES = NUM_UNMON_SITES_TEST + NUM_UNMON_SITES_TRAIN
 
 seq_length = 4096
 
-data_loc = "/home/primes/datasets/knndata/batch"
+data_loc = "/home/liyanzeng/knn-data/batch"
 
 
 def release_list(a_list):

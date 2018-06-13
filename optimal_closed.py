@@ -70,9 +70,9 @@ def get_tpr(choices_stats_loc):
     
     tpr = tpr_num / tpr_den
 
-    print "Loc:", choices_stats_loc
+    print("Loc:", choices_stats_loc)
 #    print len(prob_array), len(prob_array[0])
-    print "TPR:", tpr, "\n"
+    print("TPR:", tpr, "\n")
 
 
 # tests

@@ -68,8 +68,8 @@ def main(num_mon_sites, num_mon_inst_test, num_mon_inst_train, num_unmon_sites_t
     NUM_UNMON_SITES_TRAIN = num_unmon_sites_train
     NUM_UNMON_SITES = num_unmon_sites_test + num_unmon_sites_train
 
-    prediction_dir = "/home/primes/attack_scripts/open_world/predictions"
-    data_dir = "/home/primes/attack_scripts/open_world/preprocess"
+    prediction_dir = "/home/liyanzeng/git/Var-CNN--DynaFlow/predictions"
+    data_dir = "/home/liyanzeng/git/Var-CNN--DynaFlow/preprocess"
 
     # read in data from numpy files
     time_predictions = np.load(r"%s/time_model.npy" % prediction_dir)

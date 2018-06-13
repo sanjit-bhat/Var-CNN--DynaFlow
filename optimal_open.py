@@ -98,12 +98,12 @@ def get_stats(prop, choices_stats_loc):
     except:
         f1 = 0
 
-    print "Loc:", choices_stats_loc    
-    print "TPR:", round(tpr,3)
-    print "FPR:", round(fpr,3)
-    print "Precision:", round(prec,3)
-    print "F1:", round(f1,3)
-    print 
+    print("Loc:", choices_stats_loc)
+    print("TPR:", round(tpr,3))
+    print("FPR:", round(fpr,3))
+    print("Precision:", round(prec,3))
+    print("F1:", round(f1,3))
+    print('\n')
 
 
 # sample tests

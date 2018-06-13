@@ -91,7 +91,7 @@ def dir_cnn():
     """Load data, normalize metadata, and prepare only the packet direction information for input to Var-CNN.
     Then initialize the Var-CNN model, compute final softmax output, and return time taken to run."""
 
-    data_dir = "/home/primes/attack_scripts/open_world/preprocess"
+    data_dir = "/home/liyanzeng/git/Var-CNN--DynaFlow/preprocess"
 
     # read in data from numpy files
     train_metadata = np.load(r"%s/train_metadata.npy" % data_dir)
@@ -180,7 +180,7 @@ def time_cnn():
     """Load data, normalize metadata, and prepare only the packet time information for input to Var-CNN.
         Then initialize the Var-CNN model, compute final softmax output, and return time taken to run."""
 
-    data_dir = "/home/primes/attack_scripts/open_world/preprocess"
+    data_dir = "/home/liyanzeng/git/Var-CNN--DynaFlow/preprocess"
 
     # read in data from numpy files
     train_metadata = np.load(r"%s/train_metadata.npy" % data_dir)
